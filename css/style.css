@@ -1,0 +1,46 @@
+/* Regla - Propiedad - Valor */
+/* Importación de Fuentes de Letra */
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap');
+
+/* color de fondo de la página y tipografía general */
+body{
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+
+/* estilos de Títulos y Subtitulos */
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 26px;
+    color: cornflowerblue;
+}
+
+h3{
+    font-size: 16px;
+    color: coral;
+}
+
+/* Párrafo */
+p{
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* producto es la clase general y especifica el span*/
+.producto span{
+    color: cornflowerblue;
+}
+
+.producto img{
+    height: 150px;
+}
+
+/* Medidas
+    Absolutas: pulgadas
+    Relativas: cm, px *el que usaremos 
+*/
