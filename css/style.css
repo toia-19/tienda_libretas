@@ -44,3 +44,26 @@ p{
     Absolutas: pulgadas
     Relativas: cm, px *el que usaremos 
 */
+
+fieldset{
+    border-color: cornflowerblue;
+}
+
+legend{
+    font-size: 20px;
+    color: coral;
+}
+
+.formulario div{
+    margin: 10px;
+}
+
+.formulario input[type=text],input[type=tel],input[type=mail],input[type=date],select,textarea{
+    border-color: cornflowerblue;
+}
+
+#btnEnviar{
+    padding: 5px;
+    background-color: coral;
+    color: white;
+}
