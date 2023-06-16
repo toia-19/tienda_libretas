@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,77 +9,107 @@
 
     <!-- Importamos CSS desde index.html -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Importamos la carpeta de FontAwesome para los íconos / SOLO SOLIDOS -->
+    <link rel="stylesheet" href="css/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
 </head>
-<body>    
+
+<body>
     <!-- Navegador que enlaza a las demás páginas (menú) -->
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Título -->
-    <h1>¡Bienvenido a nuestra tienda de Libretas!</h1>
+    <main>
+        <!-- Título -->
+        <h1>¡Bienvenido a nuestra tienda de Libretas!</h1>
 
-    <!-- Enlace a página de "Nosotros" -->
-    <a href="/nosotros.html">Click para ir a Nosotros</a>
+        <!-- Subtitulo -->
+        <h2>Acerca de la Tienda</h2>
 
-    <!-- Subtitulo -->
-    <h2>Acerca de la Tienda</h2>
+        <!-- Párrafo descriptivo -->
+        <p>
+            ¡Somos una tienda de venta de papelería y libretas!<br>
+            Esperemos que tenga una buena experiencia y sea de su agrado.
+        </p>
 
-    <!-- Párrafo descriptivo -->
-    <p>
-        ¡Somos una tienda de venta de papelería y libretas!<br>
-        Esperemos que tenga una buena experiencia y sea de su agrado.
-    </p>
+        <!-- Libretas en Muestra -->
+        <h2 id="catalogo">Cátalogo:</h2>
 
-    <!-- Libretas en Muestra -->
-    <h2 id="catalogo">Cátalogo:</h2>
+        <div class="producto">
+            <!-- Nombre Producto -->
+            <h3>Libreta Moon</h3>
 
-    <div class="producto">
-        <!-- Nombre Producto -->
-        <h3>Libreta Moon</h3>
-        
-        <!-- Imagen -->
-        <img src="/imagenes/libreta_azul.jpg" alt="Libreta Azul">
+            <!-- Imagen -->
+            <img src="/imagenes/libreta_azul.jpg" alt="Libreta Azul">
 
-        <!-- Lista de características -->
-        <ul>
-            <li><span>Precio:</span> $1200</li>
-            <li><span>Modelo:</span> Libretas Space</li>
-            <li><span>Color:</span> Azul Marino</li>
-        </ul>
-    </div>
+            <!-- Lista de características -->
+            <ul>
+                <li><span>Precio:</span> $1200</li>
+                <li><span>Modelo:</span> Libretas Space</li>
+                <li><span>Color:</span> Azul Marino</li>
+            </ul>
+        </div>
 
-    <!-- Los div dividen en secciones los productos -->
-    <div class="producto">
-        <h3>Libreta Este es el Plan</h3>
-        <img src="/imagenes/libreta_rosa.jpg" alt="Libreta Rosa">
-        <ul>
-            <li><span>Precio:</span> $1300</li>
-            <li><span>Modelo:</span> Grafic Coquett</li>
-            <li><span>Color:</span> Rosa Suave</li>
-        </ul>
-    </div>
+        <!-- Los div dividen en secciones los productos -->
+        <div class="producto">
+            <h3>Libreta Este es el Plan</h3>
+            <img src="/imagenes/libreta_rosa.jpg" alt="Libreta Rosa">
+            <ul>
+                <li><span>Precio:</span> $1300</li>
+                <li><span>Modelo:</span> Grafic Coquett</li>
+                <li><span>Color:</span> Rosa Suave</li>
+            </ul>
+        </div>
 
-    <!-- Los atributos 'class' son plantillas para rehusar y especificar estilo -->
-    <div class="producto">
-        <h3>Libreta Cosmos</h3>
-        <img src="/imagenes/libreta_clara.jpg" alt="Libreta CLara">
-        <ul>
-            <li><span>Precio:</span> $1200</li>
-            <li><span>Modelo:</span> Libretas Space</li>
-            <li><span>Color:</span> Celeste Claro</li>
-        </ul>
-    </div>
+        <!-- Los atributos 'class' son plantillas para rehusar y especificar estilo -->
+        <div class="producto">
+            <h3>Libreta Cosmos</h3>
+            <img src="/imagenes/libreta_clara.jpg" alt="Libreta CLara">
+            <ul>
+                <li><span>Precio:</span> $1200</li>
+                <li><span>Modelo:</span> Libretas Space</li>
+                <li><span>Color:</span> Celeste Claro</li>
+            </ul>
+        </div>
 
-    <h2>Música</h2>
-    <!-- Enlazamos un vídeo desde YouTube con 'código de insercción' -->
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/Ek62F18l_To" title="Lets&#39; Desserts 2 : Cute and Sweet Music, 달달하고 귀여운 음악 모음, 브이로그 음악" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <div class="bloque-video">
+            <h2>Música</h2>
+            <!-- Enlazamos un vídeo desde YouTube con 'código de insercción' -->
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/Ek62F18l_To"
+                title="Lets&#39; Desserts 2 : Cute and Sweet Music, 달달하고 귀여운 음악 모음, 브이로그 음악" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+       </div>
 
-    <!-- Botón para regresar a Inicio de la página -->
-    <!-- a es para hipervínculos -->
-    <h3>Botón para Regresar al Inicio</h3>
-    <a href="#catalogo" class="link">Subir a Cátalogo</a>
+        <!-- Botón para regresar al cátalogo -->
+        <!-- a es para hipervínculos -->
+        <h3>
+            Botón para Regresar al Cátalogo
+            <a href="#catalogo" class="link">Subir a Cátalogo</a>
+        </h3>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- target = _blank significa que se abrirá en otra página -->
+        <div>
+            <a href="https://whatsapp.com" target="_blank" title="Enviar un mensaje por Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://linkedin.com" target="_blank" title="Ir a Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" title="Ir a YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

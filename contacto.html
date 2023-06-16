@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,117 +9,138 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>¡Cóntactanos!</h1>
+    <main>
+        <h1>¡Cóntactanos!</h1>
 
-    <!-- Contenedor de Muestra -->
-    <div>
-        <fieldset>
-            <!-- Nombre Sección -->
-            <legend>¿Cómo enviar un mensaje por formulario?</legend>
-            
-            <!-- Ingreso de Datos -->
-            <div class="row form-group">
-                <label for="txtInfo1">Completa los datos pedidos en cada casilla (es obligatorio).</label>
-            </div>
-            <div class="row form-group">
-                <label for="txtInfo2">Llama al número de telefono o manda un mensaje al correo si precisas ayuda.</label>
-            </div>
-            <div>
-                <a href="mailto:correoelectronico@hotmail.com">Correo</a>
-                <a href="tel:2991111111">Télefono</a>
-            </div>
-        </fieldset>
-    </div>
+        <!-- Contenedor de Muestra -->
+        <div>
+            <fieldset>
+                <!-- Nombre Sección -->
+                <legend>¿Cómo enviar un mensaje por formulario?</legend>
 
-    <!-- Contenedor de Formulario -->
-    <div class="formulario">
-        <h2>¡Envianos un mensaje!</h2>
-        <action="" method="post">
-            <!-- Nombre: -->
-            <div>
-                <label for="txtNombre">Nombre:</label>
-                <input type="text" name="txtNombre" id="txtNombre" class="form-control" required>
-            </div>
-            <!-- Correo -->
-            <div>
-                <label for="txtCorreo">Correo:</label>
-                <input type="mail" name="txtCorreo" id="txtCorreo" class="form-control" required>
-            </div>
-            <!-- Teléfono -->
-            <div>
-                <label for="txtTelefono">Teléfono:</label>
-                <input type="tel" name="txtTelefono" id="txtTelefono" required>
-            </div>
-            <!-- Fecha -->
-            <div>
-                <label for="txtDate">Fecha:</label>
-                <input type="date" name="txtFechaPedido" id="txtFechaPedido" required>
-            </div>
+                <!-- Ingreso de Datos -->
+                <div class="row form-group">
+                    <label for="txtInfo1">
+                        Completa los datos pedidos en cada casilla (es obligatorio).
+                    </label>
+                </div>
+                <div class="row form-group">
+                    <label for="txtInfo2">
+                        Llama al número de telefono o manda un mensaje al correo si precisas ayuda.
+                    </label>
+                </div>
+                <div>
+                    <a href="mailto:correoelectronico@hotmail.com">Correo</a>
+                    <a href="tel:2991111111">Télefono</a>
+                </div>
+            </fieldset>
+        </div>
 
-            <!-- Asunto del Formulario -->
-            <div>
-                <label for="istAsunto">Asunto:</label>
-                <select name="istAsunto" id="istAsunto">
-                    <option value="Ventas">Compra</option>
-                    <option value="Información">Información</option>
-                    <option value="Webmaster">Soporte</option>
-                </select>
-            </div>
+        <!-- Contenedor de Formulario -->
+        <div class="formulario">
+            <h2>¡Envianos un mensaje!</h2>
+            <form action="" method="post">
+                <!-- Nombre: -->
+                <div>
+                    <label for="txtNombre">Nombre:</label>
+                    <input type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre:"
+                        class="form-control" required>
+                </div>
+                <!-- Correo -->
+                <div>
+                    <label for="txtCorreo">Correo:</label>
+                    <input type="mail" name="txtCorreo" id="txtCorreo" placeholder="Ingrese su correo:"
+                        class="form-control" required>
+                </div>
+                <!-- Teléfono -->
+                <div>
+                    <label for="txtTelefono">Teléfono:</label>
+                    <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="Ingrese su teléfono:" required>
+                </div>
+                <!-- Fecha -->
+                <div>
+                    <label for="txtDate">Fecha:</label>
+                    <input type="date" name="txtFechaPedido" id="txtFechaPedido" required>
+                </div>
 
-            <!-- Selecciona Pedido -->
-            <div>
-                <label for="istLibreta">Pedido de Libreta:</label>
-                <!-- ist = indica que es desplegable -->
-                <select name="istLibreta" id="istLibreta">
-                    <option disabled selected>Seleccione una opción</option>
-                    <option value="1">Libreta Moon</option>
-                    <option value="2">Libreta Este es el Plan</option>
-                    <option value="3">Libreta Cosmos</option>
-                </select>
-            </div>
+                <!-- Asunto del Formulario -->
+                <div>
+                    <label for="istAsunto">Asunto:</label>
+                    <select name="istAsunto" id="istAsunto">
+                        <option value="Ventas">Compra</option>
+                        <option value="Información">Información</option>
+                        <option value="Webmaster">Soporte</option>
+                    </select>
+                </div>
 
-            <!-- Enviar Mensaje -->
-            <div>
-                <label for="txtMensaje">Mensaje:</label>
-                <textarea name="txtMensaje" id="txtMensaje" placeholder="Escriba aquí su mensaje:" required></textarea>
-            </div>
+                <!-- Selecciona Pedido -->
+                <div>
+                    <label for="istLibreta">Pedido de Libreta:</label>
+                    <!-- ist = indica que es desplegable -->
+                    <select name="istLibreta" id="istLibreta">
+                        <option disabled selected>Seleccione una opción</option>
+                        <option value="1">Libreta Moon</option>
+                        <option value="2">Libreta Este es el Plan</option>
+                        <option value="3">Libreta Cosmos</option>
+                    </select>
+                </div>
 
-            <!-- Checkbox -->
-            <!-- Novedades-->
-            <div>
-                <!-- Input irá primero que label porque representará la cajita de verificación -->
-                <input type="checkbox" name="chkNovedades" id="chkNovedades">
-                <label for="chkNovedades">Deseo recibir mensajes sobre novedades.</label>
-            </div>
+                <!-- Enviar Mensaje -->
+                <div>
+                    <label for="txtMensaje">Mensaje:</label>
+                    <textarea name="txtMensaje" id="txtMensaje" placeholder="Escriba aquí su mensaje:"
+                        required></textarea>
+                </div>
 
-            <!-- Términos y Condiciones -->
-            <div>
-                <input type="checkbox" name="chkTerminos" id="chkNovedades" checked>
-                <label for="chkNovedades">Acepto términos y condiciones.</label>
-            </div>
+                <!-- Checkbox -->
+                <!-- Novedades-->
+                <div>
+                    <!-- Input irá primero que label porque representará la cajita de verificación -->
+                    <input type="checkbox" name="chkNovedades" id="chkNovedades">
+                    <label for="chkNovedades">Deseo recibir mensajes sobre novedades.</label>
+                </div>
 
-            <!-- Seleccionar si es mayor de edad (mismo name para que sólo se elija una opción) -->
-            <div>
-                <label>¿Sos mayor de edad?</label><br>
-                <label for="optMayorSi">Sí</label>
-                <input type="radio" name="optMayorEdad" id="optMayorSi">
-                <label for="optMayorNo">No</label>
-                <input type="radio" name="optMayorEdad" id="optMayorNo">
-            </div>
+                <!-- Términos y Condiciones -->
+                <div>
+                    <input type="checkbox" name="chkTerminos" id="chkNovedades" checked>
+                    <label for="chkNovedades">Acepto términos y condiciones.</label>
+                </div>
 
-            <!-- Botón para enviar mensaje -->
-            <div>
-                <!-- type="submit" enviará al servidor todos los datos completados por el usuario -->
-                <button type="submit" name="btnEnviar" id="btnEnviar">Enviar</button>
-            </div>
-        </action>
-    </div>
+                <!-- Seleccionar si es mayor de edad (mismo name para que sólo se elija una opción) -->
+                <div>
+                    <label>¿Sos mayor de edad?</label><br>
+                    <label for="optMayorSi">Sí</label>
+                    <input type="radio" name="optMayorEdad" id="optMayorSi">
+                    <label for="optMayorNo">No</label>
+                    <input type="radio" name="optMayorEdad" id="optMayorNo">
+                </div>
+
+                <!-- Botón para enviar mensaje -->
+                <div>
+                    <!-- type="submit" enviará al servidor todos los datos completados por el usuario -->
+                    <button type="submit" name="btnEnviar" id="btnEnviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>

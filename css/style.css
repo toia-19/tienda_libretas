@@ -7,8 +7,42 @@ body{
     background-color: whitesmoke;
     color: black;
     font-family: 'Ysabeau', sans-serif;
+    font-size: 20px;
 }
 
+nav ul{
+    /* Le quita la viñeta a las listas */
+    list-style-type: none;
+    margin: 0px;
+    /* Relleno interno arriba y abajo de 14, en los laterales de 0 */
+    padding: 14px 0px;
+}
+
+nav li{
+    /* DISPLAY:INLINE pondra el texto de la barra de navegación una al lado de la otra */
+    display: inline;
+}
+
+nav{
+    display: block; /* Muestra el elemento como un bloque */
+    text-align: center; /* Centra el contenido horizontalmente */
+    background-color: coral; /* Establece el color de fondo en coral */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Aplicamos los estilos a todos los elementos (a) dentro del elemento navegación */
+nav a{
+    text-decoration: none; /* Quitamos la decoración subrayada en los enlaces*/
+    color: white; /* Establecemos el color de letra en blanco */
+    padding: 0px 50px; /* Agregamos espacio interno (relleno) entre las letras y del borde */
+}
+
+/* Estilos para los enlaces dentro de la barra de navegación */
+nav a:hover{
+    text-decoration: none; /* No aplicamos subrayado al pasar el mouse sobre el enlace */
+    color: black;
+}
 
 /* estilos de Títulos y Subtitulos */
 h1{
@@ -16,28 +50,52 @@ h1{
 }
 
 h2{
-    font-size: 26px;
+    font-size: 30px;
     color: cornflowerblue;
 }
 
 h3{
-    font-size: 16px;
+    font-size: 20px;
     color: coral;
 }
 
 /* Párrafo */
 p{
-    font-size: 16px;
+    font-size: 20px;
     font-style: italic;
 }
 
+.producto{
+    width: 280px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
 /* producto es la clase general y especifica el span*/
+
 .producto span{
     color: cornflowerblue;
 }
 
 .producto img{
     height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.producto h3{
+    text-align: center;
+}
+
+.producto li{
+    list-style-type: none;
+}
+
+.bloque-video{
+    border-radius: 8px;
+    padding: 20px;
 }
 
 /* Medidas
@@ -54,16 +112,80 @@ legend{
     color: coral;
 }
 
+main{
+    margin: 20px 10%;
+}
+
 .formulario div{
     margin: 10px;
 }
 
 .formulario input[type=text],input[type=tel],input[type=mail],input[type=date],select,textarea{
+    font-family: 'Ysabeau', sans-serif;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 10px;
     border-color: cornflowerblue;
+    cursor: pointer; /* Cambia el puntero por una mano */
+    width: 100%;
+    height: 25px;
+    font-size: 15px;
+}
+
+textarea{
+    height: 100px;
+    display: block;
+    resize: none;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 15px;
+}
+
+/* BOTÓN */
+button{
+    font-family: 'Ysabeau', sans-serif;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    font-size: 15px;
+    padding: 8px 20px;
 }
 
 #btnEnviar{
     padding: 5px;
     background-color: coral;
+    border-color: coral;
     color: white;
+}
+
+/*hover: cammbia el diseño cuando pasamos el puntero sobre el botón*/
+#btnEnviar:hover{
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+
+.link{
+    color: cornflowerblue;
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+footer i{
+    font-size: 35px;
+    border: 1px solid;
+    height: 48px;
+    width: 58px;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border-radius: 80px;
+    margin: 0 15px;
+    color: coral;
+}
+
+footer i:hover{
+    color: cornflowerblue;
 }
